@@ -1,0 +1,51 @@
+<h1>Test4 Component</h1>
+
+<h3>Pipes : String Formatting</h3>
+<div>Note: It only tranforms the data in the view, doesn't change the property in the class.</div>
+<div>
+    <div>Lowercase: {{ "Siddhant" | lowercase }}</div>
+    <div>Uppercase: {{ "Siddhant" | uppercase }}</div>
+    <div>Titlecase: {{ "Welcome to codevolution" | titlecase }}</div>
+    <div>slice (starting index): {{ "abcdefghij" | slice:3 }}</div>
+    <div>slice (starting index, ending index): {{ "abcdefghij" | slice:3:5 }}</div>
+    <div>Object to json: {{ personObject | json }}</div>
+    <div>Object to json: {{ personObject | json }}</div>
+</div>
+
+<h3>Pipes : Number Formatting</h3>
+<div>
+    <div>5.678 To ->: {{ 5.678 | number: '1.2-3' }}</div>
+    <div>5.678 To ->: {{ 5.678 | number: '3.4-5'}}</div>
+    <div>5.678 To ->: {{ 5.678 | number: '3.1-2'}}</div>
+</div>
+
+<h3>Pipes : Date Formatting</h3>
+<div>
+    <div>5.678 To ->: {{ 5.678 | number: '1.2-3' }}</div>
+    <div>5.678 To ->: {{ 5.678 | number: '3.4-5'}}</div>
+    <div>5.678 To ->: {{ 5.678 | number: '3.1-2'}}</div>
+    <div>.25 Percent Pipe: {{ .25 | percent}}</div>
+</div>
+
+<h3>Pipes : Currency</h3>
+<div>
+    <div>{{ 100 | currency }}</div>
+    <div>{{ 100 | currency: 'GBP' }}</div>
+    <div>{{ 100 | currency: 'EUR' }}</div>
+    <div>{{ 100 | currency: 'GBP' : 'code' }}</div>
+    <div>{{ 100 | currency: 'EUR' : 'code' }}</div>
+</div>
+
+<h3>Pipes : Date</h3>
+<div>
+    <div>{{date}}</div>
+    <div>{{ date | date:'short' }}</div>
+    <div>{{ date | date:'shortDate' }}</div>
+    <div>{{ date | date:'shortTime' }}</div>
+    <div>{{ date | date:'medium' }}</div>
+    <div>{{ date | date:'mediumDate' }}</div>
+    <div>{{ date | date:'mediumTime' }}</div>
+    <div>{{ date | date:'long' }}</div>
+    <div>{{ date | date:'longDate' }}</div>
+    <div>{{ date | date:'longTime' }}</div>
+</div>

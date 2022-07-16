@@ -1,0 +1,13 @@
+<h1>Test3 Component</h1>
+
+<h3>Component Interaction (AppComponent -> Test3Component)</h3>
+<div>
+    <div>Data Got From App Component 1: {{dataFromParentComponent1}}</div>
+    <div>Data Got From App Component 2: {{iCanDeclareAnyVariable}}</div>
+</div>
+
+<h3>Component Interaction (Test3Component -> AppComponent)</h3>
+<div>
+    <div>Child component sends data to parent component using events.</div>
+    <div><button (click)="fireEvent()">Click me to Send data to parent componet.</button></div>
+</div>

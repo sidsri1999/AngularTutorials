@@ -1,0 +1,14 @@
+<h1>Test5 Component</h1>
+
+<div>
+    <div>The main purpose of this component to get the employees array from service class.</div>
+    <div>We are going to use service class because it is recommended that the component ts file only be used to support the view.</div>
+    <div>And, second thing if we create the array in our component itself, and it may be used to some other component, so how we are going to do that.</div>
+    <div>So, our two priciples of programming, if we are creating the array in component ts file.</div>
+    <div>1. DRY (Do not repeat yourself), if we are going to create same employees array in different component.</div>
+    <div>2. Single Responsibility Principle, as the component class is also providing data instead of only supporting view.</div>
+    <h3>Employee List</h3>
+    <ul *ngFor="let employee of employees">
+        <li>{{employee.name}}</li>
+    </ul>
+</div>

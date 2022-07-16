@@ -1,0 +1,25 @@
+<h1>App Component</h1>
+<hr>
+<app-test></app-test>
+<hr>
+<app-test1></app-test1>
+<hr>
+<app-test2></app-test2>
+<hr>
+<!--Component Interaction-->
+<app-test3 [dataFromParentComponent1]="dataFromAppComponent1" [dataFromParentComponent2]="dataFromAppComponent2"
+    (childEvent)="messageFromTestComponet=$event"></app-test3>
+    <div>Data From Test Component: {{messageFromTestComponet}}</div>
+<hr>
+<app-test4></app-test4>
+<hr>
+<app-test5></app-test5>
+<hr>
+<app-test6></app-test6>
+<hr>
+<app-test7></app-test7>
+<hr>
+<app-test8></app-test8>
+<hr>
+<app-test9></app-test9>
+<hr>

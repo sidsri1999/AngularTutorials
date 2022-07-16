@@ -1,0 +1,10 @@
+<h1>Test8 Component</h1>
+
+<div>
+    <div>The main purpose of this component to check for error, if occurred while calling http.</div>
+    <h3>Employee Details</h3>
+    <div>{{"Error "+errorMessage}}</div>
+    <ul *ngFor="let employee of employees">
+        <li>{{employee.id}} - {{employee.name}} - {{employee.age}}</li>
+    </ul>
+</div>

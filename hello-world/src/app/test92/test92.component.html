@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <h3>Routing Component Test92</h3>
+        <div>This Will Only we visible if we go to specified Url.</div>
+    </div>
+    <div>
+        <h3>Department Detail</h3>
+        <div>You have selected {{departmentId}}</div>
+        <p>
+            <button (click)="openOverview()">Overview Test921 Component</button>
+            <button (click)="openContact()">Contact Test922 Component</button>
+        </p>
+        <router-outlet></router-outlet>
+        <p>
+            <button (click)="goPrevious()">GoPrevious</button>
+            <button (click)="goNext()">GoNext</button>
+        </p>
+        <button (click)="backToTest91Component()">Back To Test91 Component</button>
+    </div>
+</div>

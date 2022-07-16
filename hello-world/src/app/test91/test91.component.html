@@ -1,0 +1,13 @@
+<div>
+    <div>
+        <h3>Routing Component Test91</h3>
+        <div>This Will Only we visible if we go to specified Url.</div>
+    </div>
+    <div>
+        <h3>Department List</h3>
+        
+            <div (click)="onSelect(department)" [class.selected]="isDepartmentSelected(department)" *ngFor="let department of departments">
+                <button>{{department.id}} - {{department.name}}</button>
+            </div>
+    </div>
+</div>

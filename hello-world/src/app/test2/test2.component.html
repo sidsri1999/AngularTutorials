@@ -1,0 +1,64 @@
+<h1>Test2 Component</h1>
+
+<h3>ngIf Directive</h3>
+<div>
+    <div>This is used to add or remove HTML element from dom.</div>
+    <div>It is different from setting display property to none, because in that we are able to display element in dom, but not here.</div>
+    <div *ngIf="true">Example: I am visible because ngIf is true.</div>
+    <div>Example: <span *ngIf="false">I will not be visible there.</span>.. Something is invisible before me.</div>
+    <div>Example: <span *ngIf="ngIfDisplay">I will not be visible there.</span>.. Something is invisible before me.</div>
+    <div>Example: 
+        <span *ngIf="false; else elseBlock">If Block</span>
+        <ng-template #elseBlock>Else Block</ng-template>
+    </div>
+    <div>Example: 
+        <span *ngIf = "true; then ifBlock; else elseBlock   "></span>
+        <ng-template #ifBlock>If Block</ng-template>
+        <ng-template #elseBlock>Else Block</ng-template>
+    </div>
+</div>
+
+<h3>ngSwitch Directive</h3>
+<div>
+    <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'">You picked red.</div>
+        <div *ngSwitchCase="'blue'">You picked blue.</div>
+        <div *ngSwitchCase="'green'">You picked green.</div>
+        <div *ngSwitchDefault>You picked nothing</div>
+    </div>
+</div>
+
+<h3>ngFor Directive</h3>
+<div>
+    <div>It is used to render list of elements.</div>
+    <div>
+        <span *ngFor="let color of colors">
+            <span>{{color}}, </span>
+        </span>
+    </div>
+    <div>Example(we can also get index):
+        <span *ngFor="let color of colors; index as i">
+            <span>{{i}} = {{color}}, </span>
+        </span>
+    </div>
+    <div>Example(For first):
+        <span *ngFor="let color of colors; first as f">
+            <span>{{f}} = {{color}}, </span>
+        </span>
+    </div>
+    <div>Example(For last):
+        <span *ngFor="let color of colors; last as l">
+            <span>{{l}} = {{color}}, </span>
+        </span>
+    </div>
+    <div>Example(For odd):
+        <span *ngFor="let color of colors; odd as o">
+            <span>{{o}} = {{color}}, </span>
+        </span>
+    </div>
+    <div>Example(For even):
+        <span *ngFor="let color of colors; even as e">
+            <span>{{e}} = {{color}}, </span>
+        </span>
+    </div>
+</div>
